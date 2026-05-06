@@ -34,7 +34,7 @@ export function HomeView({
     <div>
       {/* Sticky header */}
       <div style={{
-        padding: "54px 16px 0",
+        padding: "30px 16px 0",
         background: "rgba(250,250,248,0.97)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",

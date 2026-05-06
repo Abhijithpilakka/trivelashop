@@ -47,7 +47,7 @@ export function AboutView({ onGoCart }: AboutViewProps) {
     <div style={{ paddingBottom: 100 }}>
       {/* Header */}
       <div style={{
-        padding: "54px 16px 16px",
+        padding: "30px 16px 16px",
         borderBottom: "1px solid var(--border)",
         background: "rgba(250,250,248,0.97)",
         backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",

@@ -20,7 +20,7 @@ export function SavedView({ allProducts, onGoHome, onOpenProduct, onGoCart }: Sa
   return (
     <div>
       <div style={{
-        padding: "54px 16px 14px",
+        padding: "30px 16px 14px",
         borderBottom: "1px solid var(--border)",
         position: "sticky", top: 0, zIndex: 50,
         background: "rgba(250,250,248,0.97)",
