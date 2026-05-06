@@ -8,14 +8,14 @@ interface AboutViewProps {
 }
 
 const STATS = [
-  { value: "500+", label: "Kits Delivered" },
-  { value: "50+",  label: "Clubs & Nations" },
-  { value: "4.9",  label: "Avg Rating" },
-  { value: "3 Days", label: "Avg Delivery" },
+  { value: "50+", label: "Kits Delivered" },
+  { value: "10+",  label: "Clubs & Nations" },
+  { value: "4.7",  label: "Avg Rating" },
+  { value: "6 Days", label: "Avg Delivery" },
 ];
 
 const FEATURES = [
-  { icon: "🏆", title: "Premium Quality",       desc: "Every kit is checked for stitching, fabric, and badge accuracy before it leaves us." },
+  { icon: "🏆", title: "Premium Quality",       desc: "We only sell high quality merchandise." },
   { icon: "🪡", title: "Embroidery & Heat Press", desc: "Choose embroidered crests for texture or heat-pressed for a clean, flat finish." },
   { icon: "📦", title: "Pan-India Shipping",     desc: "We ship everywhere in India. Free delivery on orders above ₹1,499." },
   { icon: "💬", title: "WhatsApp Support",       desc: "Order, track, and get help — all on WhatsApp. No app download needed." },
@@ -32,11 +32,11 @@ const FAQS = [
   },
   {
     q: "How long does delivery take?",
-    a: "Most orders arrive in 3–5 days. Mumbai often gets same-day or next-day. Northeast may take up to 7 days.",
+    a: "Most orders arrive in 3–5 days. Remote areas may take up to 7 days.",
   },
   {
     q: "Can I return or exchange?",
-    a: "Yes — within 7 days of delivery if the size doesn't fit or there's a quality issue. WhatsApp us a photo and we'll sort it.",
+    a: "We generally dontt accept returns due to logistical reasons, but if there's a quality issue or wrong item, please contact us on WhatsApp within 48 hours of delivery and we'll make it right.",
   },
 ];
 
@@ -155,7 +155,7 @@ export function AboutView({ onGoCart }: AboutViewProps) {
 
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {[
-              { icon: Icons.phone, label: "WhatsApp / Call", value: "+91 99999 99999" },
+              { icon: Icons.phone, label: "WhatsApp / Call", value: "+91 9072017637" },
               { icon: Icons.mail,  label: "Email",           value: "hello@trivela.in" },
             ].map((row) => (
               <div key={row.label} style={{
