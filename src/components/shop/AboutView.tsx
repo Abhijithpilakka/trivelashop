@@ -156,7 +156,7 @@ export function AboutView({ onGoCart }: AboutViewProps) {
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             {[
               { icon: Icons.phone, label: "WhatsApp / Call", value: "+91 9072017637" },
-              { icon: Icons.mail,  label: "Email",           value: "hello@trivela.in" },
+              { icon: Icons.mail,  label: "Email",           value: "trivela.co.in@gmail.com" },
             ].map((row) => (
               <div key={row.label} style={{
                 display: "flex", alignItems: "center", gap: 12, padding: "11px 14px",

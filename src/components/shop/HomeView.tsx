@@ -141,7 +141,7 @@ export function HomeView({
               fontSize: 10, fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase",
               color: "rgba(255,255,255,0.7)", marginBottom: 6,
             }}>
-              24 / 25 Season
+              2026 Season
             </span>
             <h2 className="font-serif" style={{ fontSize: 40, color: "#fff", lineHeight: 1.05, letterSpacing: "-0.01em" }}>
               New Season<br /><span style={{ fontStyle: "italic" }}>Drops</span>
