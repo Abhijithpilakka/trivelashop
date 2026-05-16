@@ -21,6 +21,14 @@ interface AppliedCoupon {
   value: number;
   discountAmount: number;
 }
+function optimizeCloudinary(url: string, width = 800) {
+  if (!url.includes("res.cloudinary.com")) return url;
+
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,c_limit,w_${width},dpr_auto/`
+  );
+}
 
 export function CartView({ onGoHome, onOpenProduct }: CartViewProps) {
   const { cart, removeFromCart, changeQty, clearCart } = useStore();
@@ -142,7 +150,13 @@ export function CartView({ onGoHome, onOpenProduct }: CartViewProps) {
             }}
               onClick={() => onOpenProduct(item.product)}
             >
-              <Image src={item.product.photos[0]} alt="" fill style={{ objectFit: "cover" }} sizes="80px" />
+              <Image
+                src={optimizeCloudinary(item.product.photos[0], 300)}
+                alt=""
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="80px"
+              />
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
               <p style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: ".08em", fontWeight: 600 }}>

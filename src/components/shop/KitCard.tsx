@@ -11,6 +11,15 @@ interface KitCardProps {
   onOpen: (p: Product) => void;
 }
 
+function optimizeCloudinary(url: string, width = 800) {
+  if (!url.includes("res.cloudinary.com")) return url;
+
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,c_limit,w_${width},dpr_auto/`
+  );
+}
+
 export function KitCard({ product: p, onOpen }: KitCardProps) {
   const { toggleWishlist, isWishlisted } = useStore();
   const soldOut = isSoldOut(p);
@@ -34,7 +43,7 @@ export function KitCard({ product: p, onOpen }: KitCardProps) {
       {/* Image */}
       <div style={{ position: "relative", height: 188, background: "var(--surface2)" }}>
         <Image
-          src={p.photos[0]}
+          src={optimizeCloudinary(p.photos[0], 600)}
           alt={p.name}
           fill
           style={{

@@ -38,6 +38,13 @@ export function ProductView({ product: p, onBack, onGoCart }: ProductViewProps) 
     setTimeout(() => setAddedOk(false), 1800);
   };
 
+  function optimizeCloudinary(url: string, width = 800) {
+  return url.replace(
+    "/upload/",
+    `/upload/f_auto,q_auto,c_limit,w_${width},dpr_auto/`
+  );
+}
+
   const handleWA = () => window.open(buildProductInquiryUrl(p, selectedVer, selectedSize), "_blank");
 
   return (
@@ -87,7 +94,10 @@ export function ProductView({ product: p, onBack, onGoCart }: ProductViewProps) 
       <div style={{ background: "var(--surface2)" }}>
         <div style={{ height: 360, overflow: "hidden", position: "relative" }}>
           <Image
-            src={p.photos[photoIdx]} alt={p.name} fill priority
+            src={optimizeCloudinary(p.photos[photoIdx], 1000)}
+            alt={p.name}
+            fill
+            priority
             style={{ objectFit: "cover", objectPosition: "center top" }}
             sizes="100vw"
           />
@@ -104,7 +114,13 @@ export function ProductView({ product: p, onBack, onGoCart }: ProductViewProps) 
               border: `2px solid ${i === photoIdx ? "var(--accent)" : "var(--border)"}`,
               borderRadius: 10, padding: 0, position: "relative", transition: "border-color .15s",
             }}>
-              <Image src={ph} alt="" fill style={{ objectFit: "cover" }} sizes="56px" />
+              <Image
+                src={optimizeCloudinary(ph, 200)}
+                alt=""
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="56px"
+              />
             </button>
           ))}
         </div>
