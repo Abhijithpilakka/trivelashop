@@ -54,7 +54,7 @@ export function ProductView({ product: p, onBack, onGoCart }: ProductViewProps) 
         position: "sticky", top: 0, zIndex: 50,
         background: "rgba(250,250,248,0.97)",
         backdropFilter: "blur(20px)", WebkitBackdropFilter: "blur(20px)",
-        padding: "50px 16px 12px",
+        padding: "30px 16px 12px",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         borderBottom: "1px solid var(--border)",
       }}>

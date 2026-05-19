@@ -36,7 +36,7 @@ const FAQS = [
   },
   {
     q: "Can I return or exchange?",
-    a: "We generally dontt accept returns due to logistical reasons, but if there's a quality issue or wrong item, please contact us on WhatsApp within 48 hours of delivery and we'll make it right.",
+    a: "We generally don't accept returns due to logistical reasons, but if there's a quality issue or wrong item, please contact us on WhatsApp within 48 hours of delivery and we'll make it right.",
   },
 ];
 

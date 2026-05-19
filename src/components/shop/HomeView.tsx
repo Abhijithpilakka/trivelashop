@@ -129,7 +129,7 @@ export function HomeView({
           boxShadow: "var(--shadow-md)",
         }}>
           <img
-            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&q=80"
+            src="https://res.cloudinary.com/dt9y9hxud/image/upload/v1779213435/Picsart_26-05-19_23-26-24-914_lt9z1x.png"
             alt=""
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", filter: "brightness(0.38) saturate(0.7)" }}
           />
