@@ -137,7 +137,7 @@ export function KitCard({ product: p, onOpen }: KitCardProps) {
           )}
         </div>
         <p style={{ fontSize: 10, color: "var(--text-dim)", marginTop: 3, letterSpacing: "0.04em" }}>
-          {p.logo}
+          {p.versions[0]}
         </p>
       </div>
     </div>
